@@ -17,3 +17,11 @@ th, td, caption {
     border-collapse: separate;
     padding: 0.5rem;
 }
+
+div {
+    margin-bottom: 1em; /* Adjust spacing between elements */
+}
+
+.message-container textarea {
+    display: block;
+}

@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Contact Us</h1>
-        <nav>
+        <nav aria-label="Main navigation menu with links to Home, About Little Taco Shop (LTS), Our Menu, and Store Hours">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -43,18 +43,19 @@
             <form action="https://httpbin.org/post" method="post">
                 <fieldset>
                     <legend>Send Us A Message</legend>
-                    <p>
+                    <div>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name" placeholder="your name" required autocomplete="name">
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label for="email">Email: </label>
                         <input type="email" id="email" name="email" placeholder="your email" required
                             autocomplete="email">
-                    </p>
-                    <p><label for="message">Your Message: </label></p>
-                    <textarea name="messgae" id="message" rows="10" cols="30" placeholder="Type your message here"
-                        required></textarea>
+                    </div>
+                    <div class="message-container"><label for="message">Your Message: </label>
+                        <textarea name="messgae" id="message" rows="10" cols="30" placeholder="Type your message here"
+                            required></textarea>
+                    </div>
                 </fieldset>
                 <button type="submit">Send</button>
                 <button type="reset">Reset</button>
